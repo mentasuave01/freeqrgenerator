@@ -1,0 +1,43 @@
+.details {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.made-with-love {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.heart {
+  color: #ef4444;
+  font-size: 1rem;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.github-icon-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2d3748;
+  transition: all 0.3s ease;
+}
+
+.github-icon-link:hover {
+  color: #1a202c;
+  transform: translateY(-2px);
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

@@ -139,14 +139,14 @@ function QRGenerator() {
         </div>
       </div>
 
-      <div className="qr-display">
-        <canvas ref={canvasRef} className="qr-canvas"></canvas>
-        {text && (
+      {text && (
+        <div className="qr-display">
+          <canvas ref={canvasRef} className="qr-canvas"></canvas>
           <button onClick={downloadQR} className="download-btn">
             Download QR Code
           </button>
-        )}
-      </div>
+        </div>
+      )}
 
       <a ref={downloadLinkRef} style={{ display: 'none' }}></a>
     </div>
